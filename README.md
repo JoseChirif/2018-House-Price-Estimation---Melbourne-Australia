@@ -1,16 +1,15 @@
 # 2018 House Price Estimation - Melbourne (Australia)
 
-El archivo "ProyectoDS_Partel_+Chirif_Molina .ipynb" se ejecuta con los datos de "melb_data.csv".
-Para ejecutarlo se deben poner ambos archivos en el mismo directorio.
+The project proposes to calculate the price of a Melbourne house according to its characteristics from the data provided in “melb_data.csv”. 
 
-El proyecto plantea calcular desde los datos proporcionados de "melb_data.csv" el precio de una vivienda de Melbourne según sus características. Los cálculos y limitaciones se plantean dentro del mismo proyecto ("ProyectoDS_Partel_+Chirif_Molina .ipynb").
+**Calculations and limitations are proposed within the same project (“2018 House Price Estimation - Melbourne (Australia).ipynb”).**
 
-## Fuente
-https://www.kaggle.com/datasets/anthonypino/melbourne-housing-market?select=Melbourne_housing_FULL.csv (author:[Tony Pino](https://www.kaggle.com/anthonypino))
+## Data source
+https://www.kaggle.com/datasets/anthonypino/melbourne-housing-market?select=Melbourne_housing_FULL.csv (by:[Tony Pino](https://www.kaggle.com/anthonypino))
 
-# Autor del notebook
-- [@Jose Chirif](https://github.com/JoseChirif)
+# ✍️ Notebook's author
+[@Jose Chirif](https://github.com/JoseChirif)
 
-## 🚀 Acerca de mi
-Ingeniero Industrial especializado en optimización de procesos, business intelligence y ciencia de datos.
-[Portafolio - Redes - Contacto](https://linktr.ee/josechirif)
+## 🚀 About me
+I'm an Industrial Engineer specialized in process optimization, business intelligence and data science.
+[Porfolio - Network - Contact](https://linktr.ee/jchirif)
