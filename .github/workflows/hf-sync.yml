@@ -1,0 +1,25 @@
+name: Sync to Hugging Face Space
+
+on:
+  push:
+    branches:
+      - main
+
+jobs:
+  sync:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v3
+
+      - name: Push to Hugging Face Space
+        env:
+          HF_TOKEN: ${{ secrets.HF_TOKEN }}
+        run: |
+          git config --global user.email "action@github.com"
+          git config --global user.name "GitHub Action"
+
+          git remote add hf https://user:${HF_TOKEN}@huggingface.co/spaces/JoseCh/2018-House-Price-Estimation-Melbourne-Australia
+
+          git push --force hf main
