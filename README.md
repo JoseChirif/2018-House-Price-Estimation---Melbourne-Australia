@@ -1,3 +1,23 @@
+---
+title: 2018 House Price Estimation — Melbourne (Australia)
+emoji: 🏠
+colorFrom: blue
+colorTo: purple
+sdk: docker
+sdk_version: "0.0.0"
+app_file: app.py
+pinned: false
+---
+
+# Melbourne House Price Estimation Dashboard (Dash)
+
+This Space deploys a Dash dashboard for estimating Melbourne house prices.
+
+- App: Dash (Docker Space)
+- Runs on port 7860
+- Dataset loaded from GitHub RAW (no large files stored in the Space)
+
+
 # 2018 House Price Estimation - Melbourne (Australia)
 
 The project proposes to calculate the price of a Melbourne house according to its characteristics from the data provided in “melb_data.csv”. 
