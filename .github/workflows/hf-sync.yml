@@ -2,24 +2,33 @@ name: Sync to Hugging Face Space
 
 on:
   push:
-    branches:
-      - main
+    branches: [main]
 
 jobs:
   sync:
     runs-on: ubuntu-latest
-
     steps:
-      - name: Checkout repository
-        uses: actions/checkout@v3
+      - name: Checkout repository (full history)
+        uses: actions/checkout@v4
+        with:
+          fetch-depth: 0
+
+      - name: Remove local Data folder (Space loads CSV from GitHub RAW)
+        run: |
+          rm -rf Data || true
+          rm -rf .ipynb_checkpoints || true
 
       - name: Push to Hugging Face Space
         env:
           HF_TOKEN: ${{ secrets.HF_TOKEN }}
         run: |
-          git config --global user.email "action@github.com"
-          git config --global user.name "GitHub Action"
+          git config user.email "action@github.com"
+          git config user.name "GitHub Action"
 
+          git remote remove hf 2>/dev/null || true
           git remote add hf https://user:${HF_TOKEN}@huggingface.co/spaces/JoseCh/2018-House-Price-Estimation-Melbourne-Australia
 
-          git push --force hf main
+          git add -A
+          git commit -m "Sync to HF Space" || true
+
+          git push --force hf HEAD:main
