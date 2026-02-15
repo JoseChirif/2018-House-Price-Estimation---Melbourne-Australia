@@ -341,6 +341,7 @@ app.layout = dbc.Container(
                         html.H5("Limitations"),
                         html.Ul(
                             [
+                                html.Li("This study is intended for educational purposes only."),
                                 html.Li("The dataset is trained and uses only 2018 data, so it is important to consider that prices change over time."),
                                 html.Li("Ridge Regression with one-hot encoding for Type and Suburb, using log(Price) target."),
                                 html.Li("Outliers are reduced using IQR filtering for readability."),
