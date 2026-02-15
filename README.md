@@ -7,6 +7,12 @@ The project proposes to calculate the price of a Melbourne house according to it
 ## Data source
 https://www.kaggle.com/datasets/anthonypino/melbourne-housing-market?select=Melbourne_housing_FULL.csv (by:[Tony Pino](https://www.kaggle.com/anthonypino))
 
+## Additional notes
+- The notebook contains the studies.
+- The dashboard was created from the notebook.
+- Docker provides a consistent environment to run the app with its dependencies.
+- Limitation: this project is for study purposes only.
+
 # ✍️ Notebook's author
 [@Jose Chirif](https://github.com/JoseChirif)
 
